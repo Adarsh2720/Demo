@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d0c5f1e210.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="{{url_for('static', filename='images/home_image/ieeelogo.png')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0c5f1e210.js" crossorigin="anonymous"></script>
+
+
+    {% block css %}
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+
+
+    <!-- ------------------------------------ Navbar ------------------------------------  -->
+
+    <div class="nav">
+        <header>
+            <a href="/" class="logo"><span>IEEE VESIT</span></a>
+
+            <ul class="menu cf navbar">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="#">Facilities</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="/events">Events</a>
+                        </li>
+                        <li>
+                            <a href="/workshops">Workshops</a>
+                        </li>
+                        <li>
+                            <a href="/magazines">Magazines</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/council">Council</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact us</a>
+                </li>
+            </ul>
+            <div class="main">
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- ------------------------------------ Centent ------------------------------------  -->
+
+    <div id="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+
+
+    <!-- ------------------------------------ Footer ------------------------------------  -->
+
+    <hr style="color: #d1f7ff; width:100%; margin: 3em 0 0 0">
+    <footer class="footer-distributed">
+        
+        <div class="footer-left">
+            <h3>IEEE - <span>VESIT</span></h3>
+
+            <p class="footer-links">
+                <a href="/">Home</a>
+                |
+                <a href="/about">About Us</a>
+                |
+                <a href="/contact">Contact Us</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2022 <strong>IEEE-VESIT</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span><a href="https://goo.gl/maps/ZB7bSb3nF2v1z1mC9">Vivekanand Education Society's Institute Of Technology <br>
+                    Hashu Adwani Memorial Complex, Collector's Colony, <br> Chembur, Mumbai, Maharashtra 400074</a></span></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><span><a href="tel:+919869679027">+91 9869679027</a></span></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><span><a href="mailto:ieee.vesit@ves.ac.in">ieee.vesit@ves.ac.in</a></span></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Council</span>
+                <strong>IEEE-VESIT</strong> is an Internation Technical Society which stands for Institute of Electrical and Electronics Engineers.
+            </p>
+            <div class="footer-icons">
+                <a href="https://github.com/ieee-vesit" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.instagram.com/ieee_vesit/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/ieeevesit/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ------------------------------------ js Links ------------------------------------  -->
+    <script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
+
+    <!-- animate on scrool -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+        AOS.init({
+            duration:1000
+        });  
+    </script>
+
+
+
+</body>
+
+</html>

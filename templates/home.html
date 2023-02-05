@@ -1,0 +1,178 @@
+{% extends "layout.html" %}
+
+{% block title %}IEEE-VESIT{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}">
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="center" data-aos="zoom-in">
+	<div class="slideshow-container">
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<img src="{{url_for('static', filename='images/home_image/A1.jpeg')}}" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="{{url_for('static', filename='images/home_image/A2.jpg')}}" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="{{url_for('static', filename='images/home_image/A3.jpg')}}" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="{{url_for('static', filename='images/home_image/A4.png')}}" style="width:100%">
+		</div>
+
+		<div class="centered">
+			<img src="{{url_for('static', filename='images/home_image/IEEEVESIT.png')}}" alt="">
+		</div>
+		<!-- Next and previous buttons -->
+		<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+	</div>
+</div>
+
+
+<div class="container">
+
+
+	<!-- ------------------------------------ About Us ------------------------------------  -->
+	<div class="about" data-aos="fade-up">
+
+
+		<center>
+			<h1><b>ABOUT US</b></h1>
+			<hr>
+		</center>
+		<div class="main">
+			<div class="card">
+				<h3 class="head1">IEEE</h3>
+				<p class="para"> The
+					<strong>Institute of Electrical and Electronics Engineers (IEEE)</strong>
+					is a professional association for electronic and electrical engineering.
+					It was formed in 1963 withthe amalgamation
+					of the American Institute of Electrical Engineers and the Institute
+					of Radio Engineers.Its objectives are the educational and technical
+					advancement of electrical and electronic engineering,
+					telecommunications, computer engineering and allied
+					disciplines.</span>
+				</p>
+			</div>
+			<div class="card">
+				<h3 class="head1">IEEE-VESIT</h3>
+				<p class="para">
+					<strong>IEEE-VESIT</strong> is the student branch of the IEEE Mumbai section, having
+					over 1000 student members. Sailing through smoothly as ever, our
+					motto "Excellence through Innovation" keeps the mast high as we
+					transform students into technically sound professionals by
+					conducting quality workshops, competitions and events for our
+					members every year.
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- What we do    -->
+	<center>
+		<h1><b>WHAT WE DO?</b></h1>
+		<hr>
+	</center>
+	<div class="reviewers">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<p>IEEE stands for Institute of Electrical and Electronic Engineers. As our motto suggests: Excellence Through Innovation, we at IEEE not only include professional, technical workshops and fun events but also Technical Paper Presentation (TPP).</p>
+				</div>
+				<div class="col-3">
+					<p>At IEEE, you will find the perfect balance between Studies and Fun as you get an equal opportunity to attend  insightful workshops and also amazing fun events. An ALL-IN-ONE society that trains you in such a way that you face the real world without any hassle.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<p> IEEE is the only society that provides Technical Paper Presentation (TPP) where you learn about the entire process of writing and publishing Research Papers which give you an edge for further studies as well as jobs. The faculty as well as the student council helps you </p>
+				</div>
+				<div class="col-3">
+					<p>IEEE Women in Engineering (WIE) is one of the largest international professional organizations dedicated to promoting women engineers and scientists and inspiring girls around the world to follow their academic interests to a career in engineering.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<center>
+		<!-- <h1 style="font-size:45px;"><b>UP-COMMING EVENTS</b></h1>   style="width: 200px; height: 3px; background-color: #000; border: 0px; border-radius: 2px;" -->
+		<h1><b>UPCOMING EVENTS</b></h1>
+		<hr>
+	</center>
+	<div data-aos="fade-up">
+
+
+		<div class="events center">
+			<img src="{{url_for('static', filename='images/home_image/A4.png')}}" alt="">
+		</div>
+	</div>
+	<!--  testimonial    -->
+	<center>
+		<h1><b>TESTIMONIALS</b></h1>
+		<hr>
+	</center>
+	<div class="reviewers">
+		<div class="small-container">
+			<div class="row-rev">
+				<div class="row">
+					<div id="row-rev-1">
+						<div class="col-3" ">
+                		<i class=" fa fa-quote-left"></i>
+							<p>Being a member of IEEE Vesit was amazing I have gained experience with the technical workshop conducted by the council. Also the International membership of IEEE have helped me in publishing my research paper</p>
+
+							<img
+								src="{{url_for('static', filename='images/home_image/juhi_rev.jpeg')}}">
+							<h3>Juhi Chhatlani</h3>
+						</div>
+						<div class="col-3">
+							<i class="fa fa-quote-left"></i>
+							<p>IEEE has no doubt been an important factor in my growth. Since all the workshop conducted had gave me insights and hands on experience into various technology that help me to learn new things. I am very grateful to IEEE-VESIT to help me in my growth</p>
+
+							<img
+								src="{{url_for('static', filename='images/home_image/mansi_rev.jpeg')}}">
+							<h3>Mansi Kasar</h3>
+						</div>
+					</div>
+					<div id="row-rev-1">
+						<div class="col-3">
+							<i class="fa fa-quote-left"></i>
+							<p>UI/UX and App devlopement workshop that was conducted by IEEE has helped me to know more about these feilds.Also all the council members helped me if any doubt arises during workshops.</p>
+
+							<img
+								src="{{url_for('static', filename='images/home_image/vansh_rev.jpeg')}}">
+							<h3>Vansh Pahuja</h3>
+						</div>
+						<div class="col-3">
+							<i class="fa fa-quote-left"></i>
+							<p>I have been a part of the IEEE-VESIT family for 3 years and I am not exaggerating one bit when I say that choosing to get into this council was the best decision at the time. The workshops are conducted by the council after intensive research and in-house trials, so that the participants can have the best experience.</p>
+
+							<img
+								src="{{url_for('static', filename='images/home_image/madhumita_rev.jpeg')}}">
+							<h3>Madhumita Menon</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="{{url_for('static', filename='js/home_script.js')}}"></script>
+</div>
+
+
+{% endblock %}
